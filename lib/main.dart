@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'src/features/auth/presentation/screens/login_screen.dart';
+import 'src/features/home/presentation/screens/home_screen.dart';
 
 void main() {
   runApp(const  MyApp());
@@ -22,7 +23,11 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
         ),
       ),
-      home: const LoginScreen(),
+      initialRoute: '/login',
+      routes: {
+        '/login': (context) => const LoginScreen(),
+        '/home': (context) => const HomeScreen(),
+      },
     );
   }
 }

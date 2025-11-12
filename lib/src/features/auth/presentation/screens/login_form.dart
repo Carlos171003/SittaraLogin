@@ -219,9 +219,7 @@ class _LoginButton extends StatelessWidget {
     return BlocConsumer<LoginCubit, LoginState>(
       listener: (context, state) {
         if (state.status == LoginStatus.success) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Login Successful!')),
-          );
+          Navigator.of(context).pushReplacementNamed('/home');
         } else if (state.status == LoginStatus.error) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(content: Text('Login Failed: ${state.errorMessage}')),
