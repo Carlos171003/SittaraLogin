@@ -232,10 +232,10 @@ class _LoginButton extends StatelessWidget {
         final bool isLoading = state.status == LoginStatus.loading;
         return ElevatedButton(
           style: ElevatedButton.styleFrom(
-            shape: StadiumBorder(),
+            shape: const StadiumBorder(),
             backgroundColor: Theme.of(context).colorScheme.primary,
             foregroundColor: Theme.of(context).colorScheme.onPrimary,
-            padding: EdgeInsets.symmetric(horizontal: 32, vertical: 16),
+            padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
           ),
           onPressed: isLoading
               ? null
