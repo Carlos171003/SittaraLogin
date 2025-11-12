@@ -35,8 +35,8 @@ class MenuScreen extends StatelessWidget {
               onTap: () {},
             ),
             _menuItem(
-              icon: Icons.smart_toy,
-              text: 'Chatbot',
+              icon: Icons.calendar_today,
+              text: 'Generar Reserva',
               onTap: () {},
             ),
             _menuItem(
