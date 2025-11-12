@@ -24,6 +24,13 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
+    - assets/images/Apoala.png
+    - assets/images/Babes.png
+    - assets/images/Bistrola 57.png
+    - assets/images/Coyote Maya.png
+    - assets/images/LogoFinal.png
+    - assets/images/Pita Mediterranea.png
+    - assets/images/Teya Santa Lucia.png
 
 icons_launcher:
   image_path: "assets/images/ICON.png"
